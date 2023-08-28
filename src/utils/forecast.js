@@ -15,7 +15,7 @@ export const forecast = (lat, long, callback) => {
       callback(undefined, {
         forecastText: 'The weather is ' + current.weather_descriptions[0] + '. It is currently '
           + current.temperature + ' degrees out. It feels like '
-          + current.feelslike + ' degrees out.',
+          + current.feelslike + ' degrees out. The humidity is '+current.humidity +'%.',
         forecastLocation: body.location.name
       })
     }
