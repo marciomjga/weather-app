@@ -18,6 +18,7 @@ export const forecast = (lat, long, callback) => {
           + current.feelslike + ' degrees out. The humidity is '+current.humidity +'%.',
         forecastLocation: body.location.name
       })
+
     }
   })
 }
